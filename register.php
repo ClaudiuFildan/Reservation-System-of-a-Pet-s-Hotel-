@@ -37,10 +37,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             } else{
                 echo "Oops! Ceva nu a functionat. Te rugam incearca mai tarziu.";
             }
-        }
-         
-        // Close statement
-        mysqli_stmt_close($stmt);
+        
+            // Close statement
+            mysqli_stmt_close($stmt);
+	}
     }
     
     // Validate password
@@ -64,29 +64,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     // Check input errors before inserting in database
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
-        
-		
-		 // New introduce for second table
-		$sql = "INSERT INTO bigc (Usernamep) VALUES (?) ";
-		if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
-            
-            // Set parameters
-            $param_username = $username;
-           // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                // Redirect to login page
-                echo "Ok, totul a mers bine.";
-            } else{
-                echo "Ceva nu a functionat. Te rugam incearca mai tarziu.";
-            }
-            
-        }
-		 // Close statement
-        mysqli_stmt_close($stmt);
-		// END New introduce for second table
-		
+       	
 		
         // Prepare an insert statement
         $sql = "INSERT INTO biga (Username, Password) VALUES (?, ?) ";
@@ -98,6 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Set parameters
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+           
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
@@ -105,15 +84,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             } else{
                 echo "Ceva nu a functionat. Te rugam incearca mai tarziu.";
             }
-        }
+        
          
-        // Close statement
-        mysqli_stmt_close($stmt);
-		
-	
-		
-		
-		
+            // Close statement
+            mysqli_stmt_close($stmt);
+		}
     }
     
     // Close connection

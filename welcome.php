@@ -61,16 +61,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <!--<tr><td>Id utilizator:				    </td> <td><b><?php echo htmlspecialchars($_SESSION["id"]);       ?></b><br> </td></tr>
 	-->
 		<tr><td>Numele de utilizator:  			</td> <td><b><?php echo htmlspecialchars($_SESSION["username"]); ?></b><br> </td></tr>
-		<tr><td>Nume de Familie: 				</td> <td><b><?php echo htmlspecialchars($_SESSION["lastname"]); ?></b><br> </td></tr>
-		<tr><td>Prenume:						</td> <td><b><?php echo htmlspecialchars($_SESSION["firstname"]);?></b><br> </td></tr>
+		<tr><td>Nume de Familie: 			</td> <td><b><?php echo htmlspecialchars($_SESSION["lastname"]); ?></b><br> </td></tr>
+		<tr><td>Prenume:				</td> <td><b><?php echo htmlspecialchars($_SESSION["firstname"]);?></b><br> </td></tr>
 		<tr><td>Data sosire:        			</td> <td><b><?php echo htmlspecialchars($_SESSION["checkin"]);  ?></b><br> </td></tr>
-		<tr><td>Data plecare:      			    </td> <td><b><?php echo htmlspecialchars($_SESSION["checkout"]); ?></b><br> </td></tr>
-		<tr><td>Numele cainelui:			    </td> <td><b><?php echo htmlspecialchars($_SESSION["dogname"]);  ?></b><br> </td></tr>
-		<tr><td>Rasa cainelui:		    	    </td> <td><b><?php echo htmlspecialchars($_SESSION["race"]);     ?></b><br> </td></tr>
-		<tr><td>Varsta cainelui:				</td> <td><b><?php echo htmlspecialchars($_SESSION["age"]);      ?></b><br> </td></tr>
-		<tr><td>Sexul cainelui:		  		    </td> <td><b><?php echo htmlspecialchars($_SESSION["sex"]);      ?></b><br> </td></tr>
-		<tr><td>Descrierea cainelui:  		    </td> <td><b><?php echo htmlspecialchars($_SESSION["des"]);      ?></b><br> </td></tr>
-		<tr><td>Numarul de telefon:  		    </td> <td><b><?php echo htmlspecialchars($_SESSION["phone"]);    ?></b><br> </td></tr>
+		<tr><td>Data plecare:      			</td> <td><b><?php echo htmlspecialchars($_SESSION["checkout"]); ?></b><br> </td></tr>
+		<tr><td>Numele cainelui:		        </td> <td><b><?php echo htmlspecialchars($_SESSION["dogname"]);  ?></b><br> </td></tr>
+		<tr><td>Rasa cainelui:		    	        </td> <td><b><?php echo htmlspecialchars($_SESSION["race"]);     ?></b><br> </td></tr>
+		<tr><td>Varsta cainelui:			</td> <td><b><?php echo htmlspecialchars($_SESSION["age"]);      ?></b><br> </td></tr>
+		<tr><td>Sexul cainelui:		    `  	        </td> <td><b><?php echo htmlspecialchars($_SESSION["sex"]);      ?></b><br> </td></tr>
+		<tr><td>Descrierea cainelui:  		        </td> <td><b><?php echo htmlspecialchars($_SESSION["des"]);      ?></b><br> </td></tr>
+		<tr><td>Numarul de telefon:  		        </td> <td><b><?php echo htmlspecialchars($_SESSION["phone"]);    ?></b><br> </td></tr>
 		
    
 		<table></center>
@@ -85,7 +85,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             
 			<tr>           <td>             Nume :</td> <td> <input type="text" name="input8"></td></tr>
             
-		    <tr>           <td>           Prenume:</td> <td> <input type="text" name="input9"></td></tr>
+		        <tr>           <td>           Prenume:</td> <td> <input type="text" name="input9"></td></tr>
             
 			<tr>           <td> Numele Animalului:</td> <td> <input type="text" name="input2"></td></tr>
             
@@ -93,7 +93,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             
 			<tr>           <td>              Rasa:</td> <td> <input type="text" name="input4"></td></tr>
             
-            <tr>           <td>             Varsta:</td> <td><input type="text" name="input5"></td></tr>
+                        <tr>           <td>             Varsta:</td> <td><input type="text" name="input5"></td></tr>
             
 			<tr>           <td>                Sex:</td> <td><input type="text" name="input6"></td></tr>
             
@@ -101,7 +101,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             
 			<tr>           <td>        Data sosire:</td> <td> <input type="text" name="input10"></td></tr>
             
-		    <tr>           <td>       Data plecare:</td> <td> <input type="text" name="input11"></td></tr>
+		        <tr>           <td>       Data plecare:</td> <td> <input type="text" name="input11"></td></tr>
 			
 			<tr>           <td>              Phone:</td> <td> <input type="text" name="input12"></td></tr>
             
